@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Keegan Gibran Jehian</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-serif">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-50 border-b border-gray-200">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-yellow-700">Portofolio</h1>
+      <ul class="flex space-x-6 text-black-700">
+        <li><a href="#about" class="hover:text-yellow-600 transition">Tentang</a></li>
+        <li><a href="#education" class="hover:text-yellow-600 transition">Pendidikan</a></li>
+        <li><a href="#projects" class="hover:text-yellow-600 transition">Proyek</a></li>
+        <li><a href="#contact" class="hover:text-yellow-600 transition">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8">
+    <div class="md:w-1/2 flex justify-center mb-6 md:mb-0">
+      <img src="1.jpeg" alt="Foto Profil" class="w-56 h-56 rounded-full shadow-2xl border-4 border-white-600 transform hover:scale-105 transition duration-300">
+    </div>
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl font-bold">Halo, Saya <span class="text-yellow-400">Keegan Gibran Jehian</span></h2>
+      <p class="text-lg mt-4 text-gray-300 ">Mahasiswa Ilmu Komputer Universitas Negeri Medan dengan minat dalam pengembangan perangkat lunak dan teknologi modern.</p>
+      <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-yellow-600 text-white font-semibold rounded-full shadow hover:bg-yellow-500 transition">Lihat Proyek</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-20 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-10 text-yellow-700">Tentang Saya</h2>
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-3xl mx-auto border border-gray-200 text-center transition transform hover:-translate-y-2 hover:shadow-xl">
+      <p class="mb-4"><strong>Nama:</strong> Keegan Gibran Jehian</p>
+      <p class="mb-4"><strong>Tanggal Lahir:</strong> 07-09-2007</p>
+      <p class="mb-4"><strong>Email:</strong> keegangibran@gmail.com</p>
+      <p class="mb-4"><strong>Minat:</strong> Olahraga</p>
+      <p class="mb-4"><strong>Alamat:</strong> Medan, Indonesia</p>
+      <p class="text-gray-600">Saya bersemangat untuk terus belajar, mengembangkan skill dalam dunia teknologi, dan membangun karya yang bermanfaat.</p>
+    </div>
+  </section>
+
+<!-- Education Section (Timeline Tengah Bergantian) -->
+<section id="education" class="bg-gray-50 py-20 px-6 fade-in">
+  <h2 class="text-3xl font-bold text-center mb-16">Riwayat Pendidikan</h2>
+
+  <div class="relative max-w-4xl mx-auto">
+    <!-- Garis Tengah -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-yellow-600 h-full"></div>
+
+    <!-- SD -->
+    <div class="mb-12 flex justify-start items-center w-full">
+      <div class="w-1/2 pr-8 text-right">
+        <div class="bg-white shadow-md rounded-xl border border-gray-200 p-6 
+                    transition transform hover:-translate-y-2 hover:shadow-xl">
+          <h3 class="text-xl font-semibold">SD</h3>
+          <p class="text-gray-600">SDN 064985 MEDAN (2013 - 2019)</p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="w-6 h-6 bg-yellow-600 rounded-full border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- SMP -->
+    <div class="mb-12 flex justify-end items-center w-full">
+      <div class="w-1/2"></div>
+      <div class="relative">
+        <div class="w-6 h-6 bg-yellow-600 rounded-full border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+      </div>
+      <div class="w-1/2 pl-8 text-left">
+        <div class="bg-white shadow-md rounded-xl border border-gray-200 p-6 
+                    transition transform hover:-translate-y-2 hover:shadow-xl">
+          <h3 class="text-xl font-semibold">SMP</h3>
+          <p class="text-gray-600">MTSN 3 MEDAN (2019 - 2022)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMA -->
+    <div class="mb-12 flex justify-start items-center w-full">
+      <div class="w-1/2 pr-8 text-right">
+        <div class="bg-white shadow-md rounded-xl border border-gray-200 p-6 
+                    transition transform hover:-translate-y-2 hover:shadow-xl">
+          <h3 class="text-xl font-semibold">SMA</h3>
+          <p class="text-gray-600">MAN 2 MODEL MEDAN (2022 - 2025)</p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="w-6 h-6 bg-yellow-600 rounded-full border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- Kuliah -->
+    <div class="mb-12 flex justify-end items-center w-full">
+      <div class="w-1/2"></div>
+      <div class="relative">
+        <div class="w-6 h-6 bg-yellow-600 rounded-full border-4 border-white shadow absolute left-1/2 transform -translate-x-1/2"></div>
+      </div>
+      <div class="w-1/2 pl-8 text-left">
+        <div class="bg-white shadow-md rounded-xl border border-gray-200 p-6 
+                    transition transform hover:-translate-y-2 hover:shadow-xl">
+          <h3 class="text-xl font-semibold">Kuliah</h3>
+          <p class="text-gray-600">Universitas Negeri Medan - Ilmu Komputer (2025 - Sekarang)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Projects Section -->
+<section id="projects" class="container mx-auto py-20 px-6 fade-in">
+  <h2 class="text-3xl font-bold text-center mb-10 text-yellow-700">Proyek & Karya</h2>
+
+  <div class="flex justify-center">
+    <!-- Card Proyek -->
+    <div class="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-2xl 
+                transition transform hover:-translate-y-2 max-w-sm">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-yellow-600 text-center">Website Portfolio</h3>
+        <p class="text-gray-600 mt-2 text-center">
+          Website pribadi untuk menampilkan informasi, karya, dan pengalaman.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-900 text-white py-20 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-10 text-yellow-400">Kontak</h2>
+    <div class="flex flex-col md:flex-row justify-center gap-8 text-center">
+      <!-- Email -->
+      <a href="mailto:keegangibran@gmail.com" target="_blank" class="flex-1 bg-gray-800 p-8 rounded-xl hover:bg-yellow-600 transition transform hover:-translate-y-2">
+        <i class="ri-mail-line text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold">Email</h3>
+        <p class="text-sm">keegangibran@gmail.com</p>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6282167255655" target="_blank" class="flex-1 bg-gray-800 p-8 rounded-xl hover:bg-yellow-600 transition transform hover:-translate-y-2">
+        <i class="ri-whatsapp-line text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold">WhatsApp</h3>
+        <p class="text-sm">0821-6725-5655</p>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/keegaannnn?igsh=MWswYjhmNjM3aW8waQ==" target="_blank" class="flex-1 bg-gray-800 p-8 rounded-xl hover:bg-yellow-600 transition transform hover:-translate-y-2">
+        <i class="ri-instagram-line text-5xl text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold">Instagram</h3>
+        <p class="text-sm">@keegaannnn</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 text-center py-4">
+    <p>&copy; 2025 Keegan Gibran Jehian. All rights reserved.</p>
+  </footer>
+
+  <!-- Script animasi scroll -->
+  <script>
+    const sections = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) sec.classList.add('show');
+      });
+    });
+  </script>
+
+</body>
+</html>
